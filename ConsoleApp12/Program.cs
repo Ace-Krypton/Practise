@@ -144,6 +144,29 @@ namespace ConsoleApp12
 
             //Console.WriteLine(isExist);
 
+
+            //string[] arr = new string[] { "Ramiz", "Abbasov" };
+
+            //Array.Clear(arr, 0, 1);
+
+            //foreach (string item in arr)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Console.WriteLine(arr.Rank);
+
+            //Array.Reverse(arr);
+
+            //foreach (string item in arr)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //string result = string.Join("-",arr);
+
+            //Console.WriteLine(result);
+
             //Console.Read();
 
             #endregion
