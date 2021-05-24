@@ -171,6 +171,31 @@ namespace ConsoleApp12
 
             #endregion
 
+            #region String
+
+            //string word = "Ramiz";
+            //string word2 = "Abbasov";
+
+            //Console.WriteLine(String.Concat(word,word2));
+
+            //Console.WriteLine(String.Compare(word,word2));
+
+            //Console.WriteLine(String.Equals(word,word2));
+
+            //Console.WriteLine(String.Join(",", word, word2));
+
+            //Console.WriteLine(word.Length);
+
+            //Console.WriteLine(word.Contains("ye"));
+
+            //Console.WriteLine(word2.LastIndexOf('a'));
+
+            //Console.WriteLine($"My name is {word} and Surname is {word2}");
+
+            //Console.Read();
+
+            #endregion
+
 
 
         }
