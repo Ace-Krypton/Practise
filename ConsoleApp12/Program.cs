@@ -192,13 +192,93 @@ namespace ConsoleApp12
 
             //Console.WriteLine($"My name is {word} and Surname is {word2}");
 
+            //string word = "Hello";
+            //char letter = 'l';
+            //int count = 0;
+
+            //foreach (char item in word)
+            //{
+            //    if (item == letter)
+            //        count++;
+            //}
+
+            //Console.WriteLine(count);
+
+            //Console.Read();
+
+
+            //string[] names = new string[] { "Ramiz", "Abbasov", "Krypton" };
+            //string maxLength = names[0];
+
+            //foreach (string item in names)
+            //{
+            //    if (maxLength.Length < item.Length)
+            //        maxLength = item;                    
+            //}
+
+            //Console.WriteLine(maxLength);
+
+            //int[] numbers = new int[] { 1, 2, 43, 5, 67, 76 };
+            //int maxNum = numbers[0];
+
+            //foreach (int item in numbers)
+            //{
+            //    if (maxNum < item)
+            //        maxNum = item;
+            //}
+
+            //Console.WriteLine(maxNum);
+
+            //Console.Read();
+
+            //string[] str = new string[] { "Ramiz", "Abbasov" };
+
+            //foreach (string item in str)
+            //{
+            //    if (item.Contains("i"))
+            //        Console.WriteLine(item);
+            //}
+
+            //Console.Read();
+
+            //string[] str = new string[] { "Ramiz", "Abbasov" };
+            //string letter = "a";
+
+            //foreach (string item in str)
+            //{
+            //    if (item.ToLower().Contains(letter))
+            //        Console.WriteLine(item);
+            //}
+
             //Console.Read();
 
             #endregion
 
+            #region Try-Catch
 
+            //Console.Write("Enter a number:");
+            //string num = Console.ReadLine();
+            //bool loop = true;
+
+            //while (loop)
+            //{
+            //    try
+            //    {
+            //        int result = int.Parse(num);
+            //        Console.WriteLine($"Your result is {num}");
+            //        loop = false;
+            //    }
+            //    catch (Exception)
+            //    {
+            //        Console.Write("Please enter again");
+            //        num = Console.ReadLine();
+            //    }
+            //}
+
+            //Console.Read();
+
+            #endregion
 
         }
-
     }
 }
