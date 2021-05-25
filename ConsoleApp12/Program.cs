@@ -279,6 +279,83 @@ namespace ConsoleApp12
 
             #endregion
 
+            //4, 5 == Argument
+            Console.WriteLine(Sum(4, 5));
+
+            //Ramiz and Abbasov is argument
+            string result = Info("Ramiz", "Abbasov");
+            Console.WriteLine(result);
+
+            //Void arguments: Ramiz and Abbasov
+            Detail("Ramiz", "Abbasov");
+
+            //Default Value
+            Default("Ramiz");
+
+            //Method overloading
+            Default("Ramiz", 17);
+
+            //String array method
+            string[] str = { "Ramiz", "Abbasov" };
+            JoinString(str);
+
+            //Params
+            Params("Ramiz", "Abbasov");
+
+            Console.Read();
+
         }
+
+        //X, Y == Parametre
+        static int Sum(int x, int y)
+        {
+            return x + y;
+        }
+
+        //Name and Surname is parametre
+        static string Info(string name, string surname)
+        {
+            return $"Name: {name} Surname: {surname}";
+        }
+
+        //Void methods
+        static void Detail(string name, string surname)
+        {
+            if (name == "Ramiz")
+                Console.WriteLine($"Name: {name} Surname: {surname}");
+            else
+                Console.WriteLine("Ramiz deyil");
+        }
+
+        //Default value
+        static void Default(string name, string surname = "Abbasov")
+        {
+            Console.WriteLine($"Name: {name} Surname: {surname}");
+        }
+
+        //Method signature :: Method name, Parametres, Parametres count, Datatypes
+        static void Default(string name, int age)
+        {
+            Console.WriteLine($"Name: {name} Age: {age}");
+        }
+
+        //Array method
+        static void JoinString(string[] arr)
+        {
+            foreach (string item in arr)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        //Params keyword
+        static void Params(params string[] arr)
+        {
+            foreach (string item in arr)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
     }
 }
