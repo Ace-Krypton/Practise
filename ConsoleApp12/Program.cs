@@ -279,83 +279,105 @@ namespace ConsoleApp12
 
             #endregion
 
+            #region Methods
             //4, 5 == Argument
-            Console.WriteLine(Sum(4, 5));
+            //Console.WriteLine(Sum(4, 5));
 
             //Ramiz and Abbasov is argument
-            string result = Info("Ramiz", "Abbasov");
-            Console.WriteLine(result);
+            //string result = Info("Ramiz", "Abbasov");
+            //Console.WriteLine(result);
 
             //Void arguments: Ramiz and Abbasov
-            Detail("Ramiz", "Abbasov");
+            //Detail("Ramiz", "Abbasov");
 
             //Default Value
-            Default("Ramiz");
+            //Default("Ramiz");
 
             //Method overloading
-            Default("Ramiz", 17);
+            //Default("Ramiz", 17);
 
             //String array method
-            string[] str = { "Ramiz", "Abbasov" };
-            JoinString(str);
+            //string[] str = { "Ramiz", "Abbasov" };
+            //JoinString(str);
 
             //Params
-            Params("Ramiz", "Abbasov");
+            //Params("Ramiz", "Abbasov");
+
+            //Console.Read();
+            #endregion
+
+            #region Ref, Out, Reference types, Value types, Heap and Stack memory
+            //int a = 10;
+            //int b = a; //b = 10
+            //b = 100;
+
+            //Console.WriteLine($"A = {a}");
+            //Console.WriteLine($"B = {b}");
+
+            //int[] array1 = { 100, 200, 300 };
+            //int[] array2 = array1;
+            //array1[0] = 1000;
+
+            //Console.WriteLine($"Array-1 :{array1[0]}");
+            //Console.WriteLine($"Array-2 :{array2[0]}");
+
+
 
             Console.Read();
-
+            #endregion
         }
 
         //X, Y == Parametre
-        static int Sum(int x, int y)
-        {
-            return x + y;
-        }
+        //static int Sum(int x, int y)
+        //{
+        //    return x + y;
+        //}
 
         //Name and Surname is parametre
-        static string Info(string name, string surname)
-        {
-            return $"Name: {name} Surname: {surname}";
-        }
+        //static string Info(string name, string surname)
+        //{
+        //    return $"Name: {name} Surname: {surname}";
+        //}
 
         //Void methods
-        static void Detail(string name, string surname)
-        {
-            if (name == "Ramiz")
-                Console.WriteLine($"Name: {name} Surname: {surname}");
-            else
-                Console.WriteLine("Ramiz deyil");
-        }
+        //static void Detail(string name, string surname)
+        //{
+        //    if (name == "Ramiz")
+        //        Console.WriteLine($"Name: {name} Surname: {surname}");
+        //    else
+        //        Console.WriteLine("Ramiz deyil");
+        //}
 
         //Default value
-        static void Default(string name, string surname = "Abbasov")
-        {
-            Console.WriteLine($"Name: {name} Surname: {surname}");
-        }
+        //static void Default(string name, string surname = "Abbasov")
+        //{
+        //    Console.WriteLine($"Name: {name} Surname: {surname}");
+        //}
 
         //Method signature :: Method name, Parametres, Parametres count, Datatypes
-        static void Default(string name, int age)
-        {
-            Console.WriteLine($"Name: {name} Age: {age}");
-        }
+        //static void Default(string name, int age)
+        //{
+        //    Console.WriteLine($"Name: {name} Age: {age}");
+        //}
 
         //Array method
-        static void JoinString(string[] arr)
-        {
-            foreach (string item in arr)
-            {
-                Console.WriteLine(item);
-            }
-        }
+        //static void JoinString(string[] arr)
+        //{
+        //    foreach (string item in arr)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
+        //}
 
         //Params keyword
-        static void Params(params string[] arr)
-        {
-            foreach (string item in arr)
-            {
-                Console.WriteLine(item);
-            }
-        }
+        //static void Params(params string[] arr)
+        //{
+        //    foreach (string item in arr)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
+        //}
+
 
     }
 }
