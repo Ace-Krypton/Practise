@@ -321,11 +321,51 @@ namespace ConsoleApp12
             //Console.WriteLine($"Array-1 :{array1[0]}");
             //Console.WriteLine($"Array-2 :{array2[0]}");
 
+            //int a = 10;
+            //ChangeNum(a);
+            //Console.WriteLine($"Deyisen = {a}");
 
+            //int[] arr = { 10, 20, 30 };
+            //Console.WriteLine($"Birinci cagirilan array: {arr[0]}");
+            //ChangeIndex(arr);
+            //Console.WriteLine($"Yuxarida cagirilan array: {arr[0]}");
+
+            //A is going to change no matter it is a value type
+            //int a = 10;
+            //ChangeNumByRef(ref a);
+            //Console.WriteLine($"Deyisen A = {a}");
+
+            int a;
+            ChangeNumByOut(out a);
+            Console.WriteLine($"Deyisen A = {a}");
 
             Console.Read();
             #endregion
         }
+
+        static void ChangeNumByOut(out int a)
+        {
+            a = 100;
+            Console.WriteLine($"A = {a}");
+        }
+        
+        //static void ChangeNumByRef(ref int a)
+        //{
+        //    a = 100;
+        //    Console.WriteLine($"A = {a}");
+        //}
+
+        //static void ChangeIndex(int[] arr)
+        //{
+        //    arr[0] = 100;
+        //    Console.WriteLine($"Methodun icindeki array: {arr[0]}");
+        //}
+
+        //static void ChangeNum(int a)
+        //{
+        //    a = 100;
+        //    Console.WriteLine($"A = {a}");
+        //} 
 
         //X, Y == Parametre
         //static int Sum(int x, int y)
