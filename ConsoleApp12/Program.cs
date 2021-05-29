@@ -354,6 +354,16 @@ namespace ConsoleApp12
             //string word = "Ramiz";
             //Console.WriteLine(Reverse(word));
 
+            StringBuilder str = new StringBuilder("Ramiz");
+            StringBuilder str2 = new StringBuilder("Abbasov");
+            bool result = StringBuilder.Equals(str, str2);
+            str.Insert(5, " ");
+            str.Append("Abbasov");
+            Console.WriteLine(str);
+            Console.WriteLine(result);
+            str.Clear();
+            Console.WriteLine(str);
+
             Console.Read();
             #endregion
 
