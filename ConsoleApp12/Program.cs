@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
+using System.Linq;
 
 namespace ConsoleApp12
 {
@@ -371,31 +372,55 @@ namespace ConsoleApp12
             //string[] arr = { "Ramiz", "Abbasov" };
             //Console.WriteLine(JoinString(arr));
 
-            string sentence = "Ramiz Abbasov";
-            Console.WriteLine(ReverseSentence(sentence));
+            //string sentence = "Ramiz Abbasov";
+            //Console.WriteLine(ReverseSentence(sentence));
+
+            string[] arr1 = { "Ramiz", "Abbasov" };
+            string[] arr2 = { "Ramiz", "Abbasov", "Krypton" };
+            Console.WriteLine(SameWord(arr1, arr2));
+
 
             Console.Read();
             #endregion
         }
 
-        static StringBuilder ReverseSentence(string sentence)
+        static string[] SameWord(string[] arr1, string[] arr2)
         {
+            string[] result = new string[0];
 
-            StringBuilder result = new StringBuilder();
-            string[] arr = sentence.Split(' ');
-
-            foreach (var word in arr)
+            foreach (string word1 in arr1)
             {
-                for (int i = word.Length - 1; i >= 0; i--)
+                foreach (string word2 in arr2)
                 {
-                    result.Append(word[i]);
+                    if(word1 == word2)
+                    {
+                        Array.Resize(ref result, result.Length + 1);
+                        result[result.Length - 1] = word1;
+                    }
                 }
-                if (arr[arr.Length - 1] != word)
-                    result.Append(' ');
             }
-            
             return result;
         }
+
+        //static StringBuilder ReverseSentence(string sentence)
+        //{
+
+        //    StringBuilder result = new StringBuilder();
+        //    string[] arr = sentence.Split(' ');
+
+        //    foreach (var word in arr)
+        //    {
+        //        for (int i = word.Length - 1; i >= 0; i--)
+        //        {
+        //            result.Append(word[i]);
+        //        }
+
+        //        if (arr[arr.Length - 1] != word)
+        //            result.Append(' ');
+        //    }
+            
+        //    return result;
+        //}
 
         //static StringBuilder JoinString(string[] arr)
         //{
