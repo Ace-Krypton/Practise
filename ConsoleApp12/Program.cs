@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
 
 namespace ConsoleApp12
 {
@@ -350,26 +351,37 @@ namespace ConsoleApp12
 
             #region StringBuilder
 
-            string word = "Ramiz";
-            Console.WriteLine(Reverse(word));
+            //string word = "Ramiz";
+            //Console.WriteLine(Reverse(word));
 
             Console.Read();
             #endregion
 
-
         }
 
-        static string Reverse(string str)
-        {
-            string result = String.Empty;
+        //static string Reverse(string str)
+        //{
+        //    string result = String.Empty;
 
-            for (int i = str.Length-1; i >= 0; i--)
-            {
-                result += str[i];
-            }
+        //    for (int i = str.Length-1; i >= 0; i--)
+        //    {
+        //        result += str[i];
+        //    }
 
-            return result;
-        }
+        //    return result;
+        //}
+
+        //Same thing with String, but in efficient way
+        //static StringBuilder Reverse(string str)
+        //{
+        //    StringBuilder result = new StringBuilder();
+
+        //    for (int i = str.Length - 1; i >= 0; i--)
+        //    {
+        //        result.Append(str[i]);
+        //    }
+        //    return result;
+        //}
 
         //static void ChangeNumByOut(out int a)
         //{
