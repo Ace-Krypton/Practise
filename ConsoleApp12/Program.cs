@@ -335,20 +335,48 @@ namespace ConsoleApp12
             //ChangeNumByRef(ref a);
             //Console.WriteLine($"Deyisen A = {a}");
 
-            int a;
-            ChangeNumByOut(out a);
-            Console.WriteLine($"Deyisen A = {a}");
+            //int a;
+            //ChangeNumByOut(out a);
+            //Console.WriteLine($"Deyisen A = {a}");
+
+            //string test = "123";
+            //int result;
+            //bool isParse = int.TryParse(test, out result);
+            //Console.WriteLine($"Bool: {isParse}");
+            //Console.WriteLine($"Result: {result}");
+
+            //Console.Read();
+            #endregion
+
+            #region StringBuilder
+
+            string word = "Ramiz";
+            Console.WriteLine(Reverse(word));
 
             Console.Read();
             #endregion
+
+
         }
 
-        static void ChangeNumByOut(out int a)
+        static string Reverse(string str)
         {
-            a = 100;
-            Console.WriteLine($"A = {a}");
+            string result = String.Empty;
+
+            for (int i = str.Length-1; i >= 0; i--)
+            {
+                result += str[i];
+            }
+
+            return result;
         }
-        
+
+        //static void ChangeNumByOut(out int a)
+        //{
+        //    a = 100;
+        //    Console.WriteLine($"A = {a}");
+        //}
+
         //static void ChangeNumByRef(ref int a)
         //{
         //    a = 100;
