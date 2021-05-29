@@ -354,20 +354,63 @@ namespace ConsoleApp12
             //string word = "Ramiz";
             //Console.WriteLine(Reverse(word));
 
-            StringBuilder str = new StringBuilder("Ramiz");
-            StringBuilder str2 = new StringBuilder("Abbasov");
-            bool result = StringBuilder.Equals(str, str2);
-            str.Insert(5, " ");
-            str.Append("Abbasov");
-            Console.WriteLine(str);
-            Console.WriteLine(result);
-            str.Clear();
-            Console.WriteLine(str);
+            //StringBuilder str = new StringBuilder("Ramiz");
+            //StringBuilder str2 = new StringBuilder("Abbasov");
+            //bool result = StringBuilder.Equals(str, str2);
+            //str.Insert(5, " ");
+            //str.Append("Abbasov");
+            //Console.WriteLine(str);
+            //Console.WriteLine(result);
+            //str.Clear();
+            //Console.WriteLine(str);
+
+            //Console.Read();
+            #endregion
+
+            #region HomeWork about methods
+            //string[] arr = { "Ramiz", "Abbasov" };
+            //Console.WriteLine(JoinString(arr));
+
+            string sentence = "Ramiz Abbasov";
+            Console.WriteLine(ReverseSentence(sentence));
 
             Console.Read();
             #endregion
-
         }
+
+        static StringBuilder ReverseSentence(string sentence)
+        {
+
+            StringBuilder result = new StringBuilder();
+            string[] arr = sentence.Split(' ');
+
+            foreach (var word in arr)
+            {
+                for (int i = word.Length - 1; i >= 0; i--)
+                {
+                    result.Append(word[i]);
+                }
+                if (arr[arr.Length - 1] != word)
+                    result.Append(' ');
+            }
+            
+            return result;
+        }
+
+        //static StringBuilder JoinString(string[] arr)
+        //{
+        //    StringBuilder result = new StringBuilder();
+
+        //    foreach (string item in arr)
+        //    {
+        //        result.Append(item);
+
+        //        if (arr[arr.Length - 1] != item)
+        //            result.Append(",");
+        //    }
+
+        //    return result;
+        //}
 
         //static string Reverse(string str)
         //{
