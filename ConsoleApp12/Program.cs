@@ -384,20 +384,22 @@ namespace ConsoleApp12
 
             #region Class
 
-            //Instance alib obyekt yaratmaq
             Person p1 = new Person();
             p1.Name = "Ramiz";
             p1.Surname = "Abbasov";
             p1.Age = 17;
 
-            //Instance alib obyekt yaratmaq
-            Person p2 = new Person();
-            p2.Name = "Krypton";
-            p2.Surname = "S3cd3d";
-            p2.Age = 17;
+            Console.WriteLine(p1.GetFullInfo());
 
-            p1.GetFullInfo();
-            p2.GetFullInfo();
+
+            Developer d1 = new Developer();
+            d1.Name = "Ramiz";
+            d1.Surname = "Abbasov";
+            d1.Age = 17;
+            d1.Experience = "2 years";
+            d1.ProgrammingLangs ="C#, Java, C";
+
+            Console.WriteLine(d1.GetFullInfo());
 
             Console.Read();
             #endregion
@@ -556,26 +558,6 @@ namespace ConsoleApp12
         //    }
         //}
         #endregion Methods
-    }
-
-    class Person
-    {
-        //Fields
-        public string Name;
-        public string Surname;
-        public int Age;
-
-        //Methods
-        public string GetFullName()
-        {
-            return $"Name: {Name} Surname: {Surname}";
-        }
-
-        //Methods
-        public void GetFullInfo()
-        {
-            Console.WriteLine($"{GetFullName()} Age: {Age}");
-        }
     }
 
 }
