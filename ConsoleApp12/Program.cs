@@ -375,32 +375,52 @@ namespace ConsoleApp12
             //string sentence = "Ramiz Abbasov";
             //Console.WriteLine(ReverseSentence(sentence));
 
-            string[] arr1 = { "Ramiz", "Abbasov" };
-            string[] arr2 = { "Ramiz", "Abbasov", "Krypton" };
-            Console.WriteLine(SameWord(arr1, arr2));
+            //string[] arr1 = { "Ramiz", "Abbasov" };
+            //string[] arr2 = { "Ramiz", "Abbasov", "Krypton"};
+            //Console.WriteLine(SameWord(arr1, arr2));
 
+            //Console.Read();
+            #endregion
+
+            #region Class
+
+            //Instance alib obyekt yaratmaq
+            Person p1 = new Person();
+            p1.Name = "Ramiz";
+            p1.Surname = "Abbasov";
+            p1.Age = 17;
+
+            //Instance alib obyekt yaratmaq
+            Person p2 = new Person();
+            p2.Name = "Krypton";
+            p2.Surname = "S3cd3d";
+            p2.Age = 17;
+
+            p1.GetFullInfo();
+            p2.GetFullInfo();
 
             Console.Read();
             #endregion
         }
+        #region Methods
+        //static string[] SameWord(string[] arr1, string[] arr2)
+        //{
+        //    string[] result = new string[0];
 
-        static string[] SameWord(string[] arr1, string[] arr2)
-        {
-            string[] result = new string[0];
+        //    foreach (string word1 in arr1)
+        //    {
+        //        foreach (string word2 in arr2)
+        //        {
+        //            if (word1 == word2)
+        //            {
+        //                Array.Resize(ref result, result.Length + 1);
+        //                result[result.Length - 1] = word1;
+        //            }
+        //        }
+        //    }
 
-            foreach (string word1 in arr1)
-            {
-                foreach (string word2 in arr2)
-                {
-                    if(word1 == word2)
-                    {
-                        Array.Resize(ref result, result.Length + 1);
-                        result[result.Length - 1] = word1;
-                    }
-                }
-            }
-            return result;
-        }
+        //    return result;
+        //}
 
         //static StringBuilder ReverseSentence(string sentence)
         //{
@@ -418,7 +438,7 @@ namespace ConsoleApp12
         //        if (arr[arr.Length - 1] != word)
         //            result.Append(' ');
         //    }
-            
+
         //    return result;
         //}
 
@@ -535,7 +555,27 @@ namespace ConsoleApp12
         //        Console.WriteLine(item);
         //    }
         //}
-
-
+        #endregion Methods
     }
+
+    class Person
+    {
+        //Fields
+        public string Name;
+        public string Surname;
+        public int Age;
+
+        //Methods
+        public string GetFullName()
+        {
+            return $"Name: {Name} Surname: {Surname}";
+        }
+
+        //Methods
+        public void GetFullInfo()
+        {
+            Console.WriteLine($"{GetFullName()} Age: {Age}");
+        }
+    }
+
 }
