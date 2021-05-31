@@ -398,16 +398,32 @@ namespace ConsoleApp12
             d1.Surname = "Abbasov";
             d1.Age = 17;
             d1.Experience = "2 years";
-            d1.ProgrammingLangs ="C#, Java, C";
+            d1.ProgrammingLangs = "C#, Java, C";
 
             //Calling method
             Console.WriteLine(d1.GetFullInfo());
 
             //Using constructor 
             Developer d2 = new Developer("Ramiz", "Abbasov", 17, "2 years", "C#, Java, C");
-            
+
             //Calling method
             Console.WriteLine(d2.GetFullInfo());
+
+            //Anonim Objects
+            var stu = new
+            {
+                Name = "Ramiz",
+                Surname = "Abbasov"
+            };
+
+            Console.WriteLine($"Name: {stu.Name} Surname: {stu.Surname}");
+
+            //Dynamic Keyword :: Var -- Works when its compiled, Dynamic -- Works on runtime
+            dynamic y = 10;
+            y = true;
+            y = "Ramiz";
+
+            Console.WriteLine(y);
 
             Console.Read();
             #endregion
