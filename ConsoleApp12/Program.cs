@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
-using System.Linq;
 
 namespace ConsoleApp12
 {
@@ -382,16 +381,18 @@ namespace ConsoleApp12
             //Console.Read();
             #endregion
 
-            #region Class
+            #region Class, Constructor, Methods, OOP
 
+            //Using methods
             Person p1 = new Person();
             p1.Name = "Ramiz";
             p1.Surname = "Abbasov";
             p1.Age = 17;
 
+            //Calling method
             Console.WriteLine(p1.GetFullInfo());
 
-
+            //Using methods
             Developer d1 = new Developer();
             d1.Name = "Ramiz";
             d1.Surname = "Abbasov";
@@ -399,7 +400,14 @@ namespace ConsoleApp12
             d1.Experience = "2 years";
             d1.ProgrammingLangs ="C#, Java, C";
 
+            //Calling method
             Console.WriteLine(d1.GetFullInfo());
+
+            //Using constructor 
+            Developer d2 = new Developer("Ramiz", "Abbasov", 17, "2 years", "C#, Java, C");
+            
+            //Calling method
+            Console.WriteLine(d2.GetFullInfo());
 
             Console.Read();
             #endregion
